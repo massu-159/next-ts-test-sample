@@ -10,7 +10,7 @@ const BlogPage = ({posts}: StaticProps) => {
   return (
     <Layout title={"Blog"}>
       <p className="text-4xl">
-        Blog
+        Blog page
       </p>
       <ul>
         {posts && posts.map((post) => (
