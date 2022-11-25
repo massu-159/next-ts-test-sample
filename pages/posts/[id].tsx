@@ -3,9 +3,9 @@ import Link from 'next/link'
 import React from 'react'
 import Layout from '../../components/Layout'
 import { getAllPostIds, getPostData } from '../../lib/fetch'
-import { Post } from '../../types/Types'
+import { POST } from '../../types/Types'
 
-const PostDetail = ({ id, title, body }: Post) => {
+const PostDetail = ({ id, title, body }: POST) => {
   return (
     <Layout title={title}>
       <p className="m-4">

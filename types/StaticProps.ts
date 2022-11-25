@@ -1,5 +1,5 @@
-import { Post } from "./Types";
+import { POST } from "./Types";
 
 export interface StaticProps {
-  posts: Post[]
+  posts: POST[]
 }

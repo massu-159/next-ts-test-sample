@@ -1,8 +1,8 @@
 import Link from 'next/link'
 import React from 'react'
-import { Post } from '../types/Types'
+import { POST } from '../types/Types'
 
-const Post = ({ id, title }: Post) => {
+const Post = ({ id, title }: POST) => {
   return (
     <div>
       <span>{ id }</span>
