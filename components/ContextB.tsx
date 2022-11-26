@@ -7,7 +7,7 @@ const ContextB = () => {
   return (
     <>
       <p>Context B</p>
-      <p className="mb-5 text-indigo-600" data-testid="toggle-b">
+      <p className="text-indigo-600" data-testid="toggle-b">
         {toggle ? 'true' : 'false'}
       </p>
     </>

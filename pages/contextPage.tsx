@@ -2,7 +2,7 @@ import React from 'react'
 import ContextA from '../components/ContextA'
 import ContextB from '../components/ContextB'
 import Layout from '../components/Layout'
-import StateProvider from '../context/StateProvider'
+import {StateProvider} from '../context/StateProvider'
 
 const ContextPage = () => {
   return (

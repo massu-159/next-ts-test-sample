@@ -16,7 +16,7 @@ const StateContext = createContext(
   }
 )
 
-const StateProvider = ({ children }: CommentProps) => {
+export const StateProvider = ({ children }: CommentProps) => {
   const [toggle, setToggle] = useState(false)
   return (
     <StateContext.Provider value={{ toggle, setToggle }}>
@@ -24,7 +24,5 @@ const StateProvider = ({ children }: CommentProps) => {
     </StateContext.Provider>
   )
 }
-
-export default StateProvider
 
 export const useStateContext = () => useContext(StateContext)
