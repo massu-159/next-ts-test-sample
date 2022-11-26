@@ -3,10 +3,10 @@ import React from 'react'
 import Layout from '../components/Layout'
 import Post from '../components/Post'
 import { getAllPostsData } from '../lib/fetch'
-import { StaticProps } from '../types/StaticProps'
+import { PostStaticProps } from '../types/PostStaticProps'
 
 
-const BlogPage = ({posts}: StaticProps) => {
+const BlogPage = ({posts}: PostStaticProps) => {
   return (
     <Layout title={"Blog"}>
       <p className="text-4xl">
