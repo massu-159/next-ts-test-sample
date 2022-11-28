@@ -20,7 +20,7 @@ const TaskPage = ({ staticTasks }: TaskStaticProps) => {
     fallbackData: staticTasks,
     revalidateOnMount: true,
   })
-  if (error) return <span>Error!</span>
+  if (error) return <span>Eror!</span>
 
   return (
     <Layout title={'Todos'}>
