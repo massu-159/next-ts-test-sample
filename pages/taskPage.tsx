@@ -24,7 +24,7 @@ const TaskPage = ({ staticTasks }: TaskStaticProps) => {
 
   return (
     <Layout title={'Todos'}>
-      <p className="text-4xl mb-10">Todos</p>
+      <p className="text-4xl mb-10">todos page</p>
       <ul>
         {tasks &&
           tasks.map((task) => (
