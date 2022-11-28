@@ -7,11 +7,17 @@ Next.js のテストを学習。
 jest, testing-library, next-page-tester
 
 ```
-render テスト(Home)、route テスト(Navbar)、SSG + prefetch テスト(BlogPage)、
+render テスト(Home)、route テスト(Navbar)、
 
-prefetch + Props 受渡しテスト(BlogDetail)、SSG + Client-Side-Fetching テスト(Comment)
+SSG + prefetch テスト(BlogPage)、
+
+prefetch + Props 受渡しテスト(BlogDetail)、
+
+SSG + Client-Side-Fetching テスト(Comment)、
 
 global state テスト(Context)、
+
+prefetch + SSG + Client-Side-Fetching テスト(TaskPageStatic, TaskPageSWR)
 ```
 
 ・[JSON Placeholder](https://jsonplaceholder.typicode.com/)のダミーデータを利用
@@ -19,7 +25,11 @@ global state テスト(Context)、
 ・データ取得のための React Hooks ライブラリである [SWR](https://swr.vercel.app) を利用
 
 ```
-“SWR” という名前は、 HTTP RFC 5861 で提唱された HTTP キャッシュ無効化戦略である stale-while-revalidate に由来しています。 SWR は、まずキャッシュからデータを返し（stale）、次にフェッチリクエストを送り（revalidate）、最後に最新のデータを持ってくるという戦略です。
+“SWR” という名前は、 HTTP RFC 5861 で提唱された HTTP キャッシュ無効化戦略である 
+
+stale-while-revalidate に由来しています。 SWR は、まずキャッシュからデータを返し（stale）、
+
+次にフェッチリクエストを送り（revalidate）、最後に最新のデータを持ってくるという戦略です。
 ```
 
 ・ブラウザ、Node 環境で Rest/Graphql のリクエストをモックしてくれるライブラリとして、[MSW](https://mswjs.io/) を利用
